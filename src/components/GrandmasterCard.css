@@ -1,0 +1,187 @@
+.gm-card {
+    background: #1e3c72;
+    padding: 20px;
+    margin: 10px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gm-card:hover {
+    border-color: #ffd700;
+}
+
+.gm-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.gm-header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.gm-title-badge-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.gm-avatar {
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border: 1px solid #ffd700;
+}
+
+.gm-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gm-avatar-placeholder {
+    width: 100%;
+    height: 100%;
+    background: #ffd700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #1e3c72;
+}
+
+.gm-title-badge, .gm-verified-badge {
+    padding: 4px 8px;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-radius: 3px;
+}
+
+.league-wood {
+    background: #8b4513;
+    color: #ffd700;
+}
+
+.league-stone {
+    background: #696969;
+    color: white;
+}
+
+.league-elite {
+    background: #800080;
+    color: #ffffff;
+}
+
+.league-bronze {
+    background: #cd7f32;
+    color: white;
+}
+
+.league-silver {
+    background: #c0c0c0;
+    color: #333;
+}
+
+.league-crystal {
+    background: #e6f3ff;
+    color: #0066cc;
+    border: 1px solid #b3d9ff;
+}
+
+.league-champion {
+    background: #ff0000;
+    color: white;
+}
+
+.league-legend {
+    background: #000000;
+    color: #ffd700;
+}
+
+.gm-verified-badge.verified {
+    background: #32cd32;
+    color: white;
+}
+
+.gm-verified-badge.not-verified {
+    background: #ff6b6b;
+    color: white;
+}
+
+.gm-card-content {
+    flex: 1;
+    color: white;
+}
+
+.gm-username {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 8px 0;
+    color: #ffd700;
+}
+
+.gm-name {
+    font-size: 14px;
+    margin: 4px 0;
+    opacity: 0.9;
+    font-style: italic;
+}
+
+.gm-name i,
+.gm-country i,
+.gm-followers i {
+    color: #ffd700;
+    margin-right: 6px;
+}
+
+.gm-country {
+    font-size: 14px;
+    margin: 4px 0;
+    opacity: 0.8;
+}
+
+.gm-followers {
+    font-size: 14px;
+    margin: 4px 0;
+    opacity: 0.8;
+}
+
+.gm-joined {
+    font-size: 14px;
+    margin: 4px 0;
+    opacity: 0.8;
+}
+
+.gm-streamer-badge {
+    display: inline-block;
+    background: #ffffff33;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid #ffffff4d;
+}
+
+.gm-card-footer {
+    margin-top: 15px;
+    text-align: right;
+}
+
+.gm-profile-link {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
