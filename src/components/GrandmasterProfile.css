@@ -1,0 +1,543 @@
+.profile-container {
+    min-height: 100vh;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.profile-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+
+.profile-header {
+    margin-bottom: 40px;
+}
+
+.back-button {
+    background: #ffd70033;
+    border: 1px solid #ffd7004d; /* 4d = 30% opacity */
+    color: #ffd700;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.profile-main-info {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background: #2d3748cc;
+    padding: 40px;
+    border: 1px solid #ffd70033;
+}
+
+.profile-avatar-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-avatar-placeholder {
+    width: 150px;
+    height: 150px;
+    background: #ffd700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    font-weight: bold;
+    color: #1e3c72;
+    border: 2px solid #ffd700;
+}
+
+.profile-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.title-badge {
+    background: #ffd700;
+    color: #1e3c72;
+    padding: 8px 16px;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.verified-badge {
+    padding: 8px 16px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.verified-badge.verified {
+    background: #4ade80;
+    color: white;
+}
+
+.verified-badge.not-verified {
+    background: #ef4444;
+    color: white;
+}
+
+.streamer-badge {
+    background: #8b5cf6;
+    color: white;
+    padding: 8px 16px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.profile-info {
+    flex: 1;
+    color: white;
+}
+
+.profile-name {
+    font-size: 48px;
+    font-weight: bold;
+    color: #ffd700;
+    margin: 0 0 10px 0;
+}
+
+.profile-username {
+    font-size: 24px;
+    color: #e2e8f0;
+    margin: 0 0 15px 0;
+    opacity: 0.9;
+}
+
+.profile-location,
+.profile-league {
+    font-size: 19px;    
+    color: #e2e8f0;
+    margin: 8px 0;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.profile-league.league-wood {
+    background: transparent;
+    color: #ffd700;
+    text-shadow: 
+    -1px -1px 0 #8b4513,
+     1px -1px 0 #8b4513,
+    -1px  1px 0 #8b4513,
+     1px  1px 0 #8b4513;
+    stroke: #8b4513;
+    stroke-width: 32px;
+}
+
+.profile-league.league-stone {
+    background: transparent;
+    color: white;
+    text-shadow: 
+    -1px -1px 0 #696969,
+     1px -1px 0 #696969,
+    -1px  1px 0 #696969,
+     1px  1px 0 #696969;
+    stroke: #696969;
+    stroke-width: 32px;
+}
+
+.profile-league.league-elite {
+    background: transparent;
+    color: #ffffff;
+    text-shadow: 
+    -1px -1px 0 #800080,
+     1px -1px 0 #800080,
+    -1px  1px 0 #800080,
+     1px  1px 0 #800080;
+    stroke: #800080;
+    stroke-width: 32px;
+}
+
+.profile-league.league-bronze {
+    background: transparent;
+    color: white;
+    text-shadow: 
+    -1px -1px 0 #cd7f32,
+     1px -1px 0 #cd7f32,
+    -1px  1px 0 #cd7f32,
+     1px  1px 0 #cd7f32;
+    stroke: #cd7f32;
+    stroke-width: 32px;
+}
+
+.profile-league.league-silver {
+    background: transparent;
+    color: #333;
+    text-shadow: 
+    -1px -1px 0 #c0c0c0,
+     1px -1px 0 #c0c0c0,
+    -1px  1px 0 #c0c0c0,
+     1px  1px 0 #c0c0c0;
+    stroke: #c0c0c0;
+    stroke-width: 32px;
+}
+
+.profile-league.league-crystal {
+    background: transparent;
+    color: #0066cc;
+    text-shadow: 
+    -1px -1px 0 #e6f3ff,
+     1px -1px 0 #e6f3ff,
+    -1px  1px 0 #e6f3ff,
+     1px  1px 0 #e6f3ff;
+    stroke: #e6f3ff;
+    stroke-width: 32px;
+    border: unset;
+}
+
+.profile-league.league-champion {
+    background: transparent;
+    color: white;
+    text-shadow: 
+    -1px -1px 0 #ff0000,
+     1px -1px 0 #ff0000,
+    -1px  1px 0 #ff0000,
+     1px  1px 0 #ff0000;
+    stroke: #ff0000;
+    stroke-width: 32px;
+}
+
+.profile-league.league-legend {
+    background: transparent;
+    color: #ffd700;
+    text-shadow: 
+    -2px -2px 0 #000000,
+     2px -2px 0 #000000,
+    -2px  2px 0 #000000,
+     2px  2px 0 #000000;
+    stroke: #000000;
+    stroke-width: 36px;
+}
+
+.profile-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-end;
+}
+
+.external-link {
+    background: #ffffff1a;
+    border: 1px solid #ffffff33;
+    color: #ffd700;
+    padding: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.profile-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    container-type: inline-size;
+}
+
+.stat-text {
+    color: #ffd700;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.live-clock-card {
+    background: #ffd70033 !important;
+    border: 1px solid #ffd70066 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 120px;
+    overflow: hidden;
+}
+
+.live-clock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.clock-icon {
+    font-size: 24px;
+    flex-shrink: 0;
+}
+
+.clock-time {
+    font-family: 'Courier New', monospace;
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffd700;
+    text-align: center;
+    line-height: 1;
+}
+
+.streaming-section {
+    background: #2d3748;
+    padding: 25px;
+    border: 1px solid #ffd70033;
+}
+
+.streaming-section h3 {
+    color: #ffd700;
+    margin: 0 0 15px 0;
+    font-size: 24px;
+}
+
+.streaming-platforms {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.platform-badge {
+    background: #8b5cf6;
+    color: white;
+    padding: 8px 16px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.profile-url-section .streaming-platforms {
+    margin-top: 15px;
+}
+
+.platform-link {
+    background: #8b5cf6;
+    color: white;
+    padding: 8px 16px;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.platform-link:hover {
+    background: #7c3aed;
+    color: white;
+    text-decoration: none;
+}
+
+.chess-stats-section {
+    background: #2d3748cc;
+    padding: 25px;
+    border: 1px solid #ffd70033;
+}
+
+.chess-stats-section h3 {
+    color: #ffd700;
+    margin: 0 0 20px 0;
+    font-size: 24px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.stats-grid .stat-card {
+    background: #ffd70026;
+    border: 1px solid #ffd7004d;
+}
+
+.stats-grid .stat-card h4 {
+    color: #e2e8f0;
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.stats-grid .stat-card .stat-number {
+    color: #ffd700;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+}
+
+.stats-grid .stat-card .stat-label {
+    color: #e2e8f0;
+    font-size: 12px;
+    margin: 0;
+    opacity: 0.8;
+}
+
+.profile-details {
+    background: #2d3748cc;
+    padding: 25px;
+    border: 1px solid #ffd70033;
+}
+
+.profile-details h3 {
+    color: #ffd700;
+    margin: 0 0 20px 0;
+    font-size: 24px;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: #ffffff0d;
+    border-radius: 12px;
+    border: 1px solid #ffffff1a;
+}
+
+.detail-label {
+    color: #e2e8f0;
+    font-weight: 500;
+}
+
+.detail-value {
+    color: #ffd700;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .profile-container {
+      padding: 10px;
+    }
+    
+    .profile-main-info {
+      flex-direction: column;
+      text-align: center;
+      gap: 30px;
+      padding: 30px 20px;
+    }
+    
+    .profile-name {
+      font-size: 40px;
+    }
+    
+    .profile-username {
+      font-size: 19px;
+    }
+    
+    .profile-actions {
+      align-items: center;
+      width: 100%;
+    }
+    
+    .profile-stats {
+      grid-template-columns: 1fr;
+    }
+    
+    .details-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .live-clock-card {
+      min-height: 100px;
+      padding: 15px;
+    }
+    
+    .live-clock {
+      margin: 5px 0;
+    }
+
+    .profile-location, .profile-league {
+        justify-content: center;
+    }
+
+    .profile-league.league-wood {
+        background: #8b4513;
+        text-shadow: unset;
+        stroke: unset;
+        stroke-width: unset;
+    }
+    
+    .profile-league.league-stone {
+        background: #696969;
+        color: white;
+        text-shadow: unset;
+        stroke: unset;
+        stroke-width: unset;
+    }
+    
+    .profile-league.league-elite {
+        background: #800080;
+        color: #ffffff;
+        text-shadow: unset;
+        stroke: unset;
+        stroke-width: unset;
+    }
+    
+    .profile-league.league-bronze {
+        background: #cd7f32;
+        color: white;
+        text-shadow: unset;
+        stroke: unset;
+        stroke-width: unset;
+    }
+    
+    .profile-league.league-silver {
+        background: #c0c0c0;
+        color: #333;
+        text-shadow: unset;
+        stroke: unset;
+        stroke-width: unset;
+    }
+    
+    .profile-league.league-crystal {
+        background: #e6f3ff;
+        color: #0066cc;
+        text-shadow: unset;
+        stroke: unset;
+        stroke-width: unset;
+        border: 1px solid #b3d9ff;
+    }
+    
+    .profile-league.league-champion {
+        background: #ff0000;
+        color: white;
+        text-shadow: unset;
+        stroke: unset;
+        stroke-width: unset;
+    }
+    
+    .profile-league.league-legend {
+        background: #000000;
+        color: #ffd700;
+        text-shadow: unset;
+        stroke: unset;
+        stroke-width: unset;
+    }
+  }

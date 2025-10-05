@@ -13,15 +13,14 @@ export interface GMDataType {
     joined?: number;
     status?: string;
     is_streamer?: boolean;
-    twitch_url?: string;
     verified?: boolean;    
     league?: string;
-    streaming_platform?: StreamingPlatform[];
+    streaming_platforms?: StreamingPlatform[];
 }
 
 export interface StreamingPlatform {
     type?: string;
-    channel?: string;
+    channel_url?: string;
 }
 
 export interface ChessAPIResponse {
@@ -32,9 +31,4 @@ export interface GmProfile extends GMDataType {
     country?: string;
     country_code_from_url?: string;
     fide?: number;
-    uscf?: number;
-    ecf?: number;
-    rcf?: number;
-    cfc?: number;
-    dsb?: number;
 }

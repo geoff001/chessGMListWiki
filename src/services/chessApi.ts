@@ -35,10 +35,9 @@ export class ChessApiService {
                         joined: profile.joined,
                         status: profile.status,
                         is_streamer: profile.is_streamer,
-                        twitch_url: profile.twitch_url,
                         verified: profile.verified,
                         league: profile.league,
-                        streaming_platform: profile.streaming_platform,
+                        streaming_platforms: profile.streaming_platforms,
                     } as GMDataType;
                 }
 
@@ -61,7 +60,6 @@ export class ChessApiService {
             }
             
             const data: GmProfile = await response.json();
-            
             return data;
         } catch (error) {
             console.error(`Error fetching profile for ${username}:`, error);

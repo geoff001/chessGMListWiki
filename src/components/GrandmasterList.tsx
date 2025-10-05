@@ -69,11 +69,8 @@ const GrandmasterList: React.FC = () => {
         }
     });
 
-    const handleCardClick = (gm: GMDataType) => {
-        console.log(`Clicked on ${gm.username}`);
-        navigate(`/profile/${gm.username}`);
-    }
-
+    const handleCardClick = (gm: GMDataType) => navigate(`/profile/${gm.username}`);
+    
     if (isLoading) {
         return (
         <div className="grandmaster-wiki">
